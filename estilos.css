@@ -1,0 +1,145 @@
+/*estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 83%, 46%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%)
+}
+
+body{
+ 
+    font-family: "Karla", sans-serif;
+    background-color: var(--LightGray);
+    padding: 5em;
+}
+
+main{
+   
+    /*centramos el main*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+/* darle estilos al contenedor  principal*/
+.container{
+
+    width: 50em;
+
+    display: grid;
+    grid-template-areas:
+    "caja1 caja1"
+    "caja2 caja3";   
+}
+
+/* estilos a la caja 1*/
+/*join our community*/
+.caja1{
+
+    padding: 20px;
+
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+
+    grid-area: caja1;
+}
+
+.caja1 h1{
+
+    font-size: 30px;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 15px;
+}
+
+
+.caja1 .sub {
+
+    font-size: 20px;
+    color: rgb(219, 219, 66);
+    padding-bottom: 15px;
+}
+
+
+.caja1 p{
+    font-size: 16px;
+    text-align: left;
+    color: #8a8987;
+}
+
+
+/*ESTILOS A LA CAJA 2*/
+/*Monthly Subscription*/
+.caja2{
+ 
+    height: 200px;
+    
+    color: white;
+    background-color: var(--Cyan);
+    grid-area: caja2;
+
+    padding: 2em;
+
+}
+
+.caja2 h1{
+    font-size: 20px;
+    text-align: left;
+
+    padding-bottom: 20px;
+}
+
+.caja2 p{
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn{
+
+    width: 100%;
+    height: 40px;
+
+    color: white;
+    font-weight: 600;
+    
+    border: none;
+    border-radius: 5px;
+    box-shadow:  0px 1px 4px 0px rgb(66, 66, 65);
+    background: var(--BrightYellow);
+    
+   
+    cursor: pointer;
+}
+
+
+
+/***************************************************/
+/*estilo a la caja 3 */
+/*why us */
+
+.caja3{
+
+
+    
+    background: hsl(179, 61%, 49%);
+    grid-area: caja3;
+    
+    color: white;
+    padding: 2em;
+}
+
+.caja3 h2{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
