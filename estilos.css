@@ -84,6 +84,7 @@ main{
     background-color: var(--Cyan);
     grid-area: caja2;
 
+    border-radius: 0px 0px 0px 10px;
     padding: 2em;
 
 }
@@ -91,8 +92,17 @@ main{
 .caja2 h1{
     font-size: 20px;
     text-align: left;
-
     padding-bottom: 20px;
+}
+
+.sub1{
+    font-size: 30px;
+    font-weight: 600;
+}
+span{
+    font-size: 18px;
+    font-weight: normal;
+    color:#eee7d8;
 }
 
 .caja2 p{
@@ -114,7 +124,6 @@ main{
     box-shadow:  0px 1px 4px 0px rgb(66, 66, 65);
     background: var(--BrightYellow);
     
-   
     cursor: pointer;
 }
 
@@ -126,12 +135,11 @@ main{
 
 .caja3{
 
-
-    
     background: hsl(179, 61%, 49%);
     grid-area: caja3;
     
     color: white;
+    border-radius: 0px 0px 10px 0px;
     padding: 2em;
 }
 
@@ -140,6 +148,69 @@ main{
     padding-bottom: 20px;
 }
 
+/*Pie de pagina */
+.attribution{
+    font-size: 16px;
+    text-align: center;
 
+    padding-top: 4em;
+}
+.attribution a{
+    font-weight: 600;
+
+    text-decoration: none;
+    color: #130d3a;
+}
+
+
+/**********************************************************/
+/*media querys*/
+
+@media (max-width: 750px) {
+
+    body{
+        padding: 2em;
+    }
+
+    .container{
+
+        grid-template-areas:
+        "caja1 caja1"
+        "caja2 caja2"
+        "caja3 caja3";   
+    }
+
+    .caja1{
+        height: 250px;
+    }
+    .caja1 p{
+        width: 90%;
+        font-size: 18px;
+       
+    }
+    .caja2{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .caja3{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    body{
+        padding: 2.4em;
+        padding-top: 4em;
+    }
+    
+    .caja1 p{
+        width: 85%;
+        font-size: 16px;
+       
+    }
+}
 
 
